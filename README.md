@@ -15,6 +15,8 @@ An end-to-end MMM pipeline that decomposes revenue by marketing channel, estimat
 ---
 
 ## Project structure
+
+```
 mmm-dashboard/
 ├── data/
 │   └── generate_data.py      # Synthetic dataset with known ground truth parameters
@@ -27,11 +29,12 @@ mmm-dashboard/
 │   └── types.py              # MMMModel dataclass
 ├── app.py                    # 4-tab Streamlit dashboard
 └── requirements.txt
+```
 
 ---
 
 ## Model results
-
+```
 | Metric | Value |
 |---|---|
 | R² | 0.9461 |
@@ -40,7 +43,7 @@ mmm-dashboard/
 | Top channel by ROI | Email (3.09x) |
 | Top channel by contribution | Search (18.5% of revenue) |
 | Budget optimisation uplift | ~20% on same spend |
-
+```
 ---
 
 ## Key technical decisions
@@ -77,14 +80,14 @@ streamlit run app.py
 ---
 
 ## Dashboard tabs
-
+```
 | Tab | What it shows |
 |---|---|
 | Model Overview | R², MAPE, actual vs predicted chart, contribution summary |
 | Revenue Decomposition | Weekly stacked bar by channel, saturation curves |
 | Budget Optimiser | Optimal allocation for a given budget, revenue uplift, scenario planning |
 | Scenario Planner | Real-time revenue prediction as you adjust channel spend |
-
+```
 ---
 
 ## Built by
